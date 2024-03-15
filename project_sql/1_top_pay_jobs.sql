@@ -21,6 +21,6 @@ WHERE
     job_post.job_title_short ='Data Scientist' AND 
     job_post.salary_year_avg IS NOT NULL AND
     job_post.job_schedule_type = 'Full-time' AND
-    job_post.job_location = 'Anywhere'
+    (job_post.job_location = 'St. Louis, MO' OR job_post.job_location = 'Anywhere')
 ORDER BY 
        salary_year_avg DESC;
